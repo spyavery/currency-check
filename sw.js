@@ -7,10 +7,10 @@
 //add all caches
 var appCacheName = 'ccheck-static-v1';
 var appCacheAssets = [
-    '/',
-    'css/app.css',
-    'js/app.js',
-    'manifest.json',
+    'https://spyavery.github.io/currency-check/',
+    'https://spyavery.github.io/currency-check/css/app.css',
+    'https://spyavery.github.io/currency-check/js/app.js',
+    'https://spyavery.github.io/currency-check/manifest.json',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
     'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',
