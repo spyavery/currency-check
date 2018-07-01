@@ -3,6 +3,6 @@
   "start_url": "/",
   "name": "Currency Check",
   "display": "standalone",
-  "background_color": "#EEEEEE",
-  "theme_color": "#EEEEEE"
+  "background_color": "#00bf8f",
+  "theme_color": "#00bf8f"
 }

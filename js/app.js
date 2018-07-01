@@ -162,7 +162,7 @@ function fetchFromDatabase(symbol, amount) {
 
             if(data == null){
                 $(".error_msg").append(`
-					<div class="card-feel">
+					<div class="card-push">
 		                <span class="text-danger">
 		                	Sorry We Cant Convert Right now, Kindly Try Again.
 		                </span>
@@ -182,7 +182,7 @@ function fetchFromDatabase(symbol, amount) {
             let to = pairs[1];
 
             $(".results").append(`
-				<div class="card-feel" style="margin-top: 10px;">
+				<div class="card-push" style="margin-top: 10px;">
 				<h1 class="small text-center"> <b>${amount}</b>  <b>${val.fr}</b> to <b>${val.to}</b> converted </h1>
 					<hr />
 	                Exchange rate for <b>${amount}</b> <b>${fr}</b> to <b>${to}</b> is: <br /> 
@@ -231,7 +231,7 @@ function convertCurrency(){
     if(from == to){
         // console.log('error ');
         $(".error_msg").html(`
-			<div class="card-feel" style="margin-top: 10px;">
+			<div class="card-push" style="margin-top: 10px;">
 				<span class="text-danger">
 					Sorry cant convert same currency!
 				</span>
@@ -261,7 +261,7 @@ function convertCurrency(){
         // iterate pairs
         $.each(pairs, function(index, val) {
             $(".results").append(`
-				<div class="card-feel" style="margin-top: 10px;">
+				<div class="card-push" style="margin-top: 10px;">
 				<h1 class="small text-center"> <b>${amount}</b>  <b>${val.fr}</b> to <b>${val.to}</b> converted </h1>
 					<hr />
                    Exchange rate for <b>${amount}</b> <b>${val.fr}</b> to <b>${val.to}</b> is: <br /> 
