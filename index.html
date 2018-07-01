@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Currency Check, the best offline currency converter.">
+    <meta name="author" content="Emmanuel Spyavery Iyogun">
+    <title>Currency Check</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+
+<!-- body content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error_msg text-center"></div>
+        </div>
+    </div>
+  <div class="row" style="padding-top:20px">
+      <div class="col-md-4 offset-md-4 text-center ">
+          <h3 class="text-white">Currency Check</h3>
+      </div>
+
+  </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card-feel" style="padding: 20px;">
+                <h1 class="lead text-center">Choose Currency</h1>
+                <form method="post" onsubmit="return convertCurrency()">
+
+                    <div class="form-group">
+                        <label for="from-currency">From</label>
+                        <select class="form-control" id="from-currency"></select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="to-currency">To</label>
+                        <select class="form-control" id="to-currency"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="convert-amount">Amount</label>
+                        <input type="number" min="1" step=any id="convert-amount" value="1" class="form-control" placeholder="Enter Amount">
+                    </div>
+
+
+
+                    <div class="from-group text-center">
+                        <label for="convert-btn"></label>
+                        <button class="btn btn-success" id="convert-btn">Convert</button>
+                    </div>
+                    <br />
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="results"></div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+<!--Notify-->
+<div class="notify"></div>
+
+
+<!-- scripts  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

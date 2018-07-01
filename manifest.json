@@ -1,0 +1,8 @@
+{
+  "short_name": "Currency Check",
+  "start_url": "/",
+  "name": "Currency Check",
+  "display": "standalone",
+  "background_color": "#EEEEEE",
+  "theme_color": "#EEEEEE"
+}

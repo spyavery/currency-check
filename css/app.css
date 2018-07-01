@@ -1,0 +1,25 @@
+body {
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00bf8f, #001510);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00bf8f, #001510); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #000;
+}
+
+
+.card-feel {
+    margin-top: 50px;
+    padding: 0.5em;
+    background: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.results {
+    padding: 3px;
+}
