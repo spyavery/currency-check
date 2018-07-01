@@ -19,3 +19,6 @@ This application is written in ES6, HTML Bootstrap and the use of Jquery. Below 
 
 
 
+# Checkout The App
+
+(Currency Check)[https://spyavery.github.io/currency-check/]
