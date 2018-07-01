@@ -23,3 +23,12 @@ label{
 .results {
     padding: 3px;
 }
+
+.linkage {
+    color:#fff;
+}
+
+.linkage:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
