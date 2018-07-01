@@ -5,7 +5,7 @@
  */
 
 //add all caches
-var appCacheName = 'ccheck-static-v3';
+var appCacheName = 'ccheck-static-v1';
 var appCacheAssets = [
     '/',
     'css/app.css',

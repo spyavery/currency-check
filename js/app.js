@@ -91,7 +91,7 @@ if (!window.indexedDB) {
 function openDatabase(){
 
     const DB_NAME 	= 'ccheck';
-    const database 	= indexedDB.open(DB_NAME, 2);
+    const database 	= indexedDB.open(DB_NAME, 1);
 
     // catch any error
     database.onerror = (event) => {
@@ -169,12 +169,10 @@ function fetchFromDatabase(symbol, amount) {
 					</div>
 				`);
 
-                // hide error message
                 setTimeout((e) => {
                     $(".error_msg").html("");
                 }, 1000 * 3);
 
-                // void
                 return;
             }
 
@@ -281,7 +279,6 @@ function convertCurrency(){
             saveToDatabase(object);
         });
     }).fail((err) => {
-        // check currencies from indexedDB
         fetchFromDatabase(body, amount);
     });
 
@@ -289,15 +286,14 @@ function convertCurrency(){
     return false;
 }
 
-// array generators using map & arrow func
 function objectToArray(objects) {
-    // body...
+
     const results = Object.keys(objects).map(i => objects[i]);
     return results;
 }
 
-// refresh page
+
 function refreshPage() {
-    // body...
+
     window.location.reload();
 }
